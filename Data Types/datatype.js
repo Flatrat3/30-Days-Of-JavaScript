@@ -130,7 +130,6 @@ const regex = /love/gi;
 const loveWord = text.match(regex);
 console.log(loveWord); // Output: (3) ['love', 'love', 'love']
 const count = (text.match(regex) || []).length;
-
 console.log(count); // Output: 2
 
 let txt =
@@ -144,3 +143,39 @@ console.log(txt.match(regEx));
 
 let stringRepeat = "I love you ";
 console.log(stringRepeat.repeat(10));
+
+// Replace
+
+let stringReplace = "JavaScript is fun";
+console.log(stringReplace.replace("JavaScript", "React"));
+
+//Checking Data Types and Casting
+//Checking Data Types
+
+console.log(typeof stringRepeat);
+console.log(typeof num);
+console.log(booleanData);
+console.log(nullData);
+
+//Changing Data Type (Casting)
+
+//String to Int
+
+let stringNum = "10";
+let intNum = parseInt(stringNum);
+console.log(typeof intNum);
+
+let numNum = Number(stringNum);
+console.log(typeof numNum);
+
+let numPlus = +stringNum;
+console.log(typeof numNum);
+
+//String to Float
+
+let floatNum = 10.5;
+let floatNum2 = parseFloat(floatNum);
+console.log(floatNum2);
+
+//Float to Int
+console.log(parseInt(floatNum));
