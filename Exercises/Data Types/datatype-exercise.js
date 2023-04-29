@@ -122,11 +122,9 @@ let regExNumber = /\d+/g;
 let regExNumber2 = txt.match(regExNumber); // ['5000', '10000', '15000']
 
 let monthlySalary = parseInt(regExNumber2[0]);
-let annualBonus = parseInt(regExNumber2[1]);
-let onlineCourseBonus = parseInt(regExNumber2[2]);
+let annualBonus = +regExNumber2[1];
+let onlineCourseBonus = Number(regExNumber2[2]);
 let totalInCome = monthlySalary * 12 + annualBonus + onlineCourseBonus * 12;
 console.log(totalInCome);
 
-// let txtStartIndex = txt.indexOf("5000");
-// let txtEndIndex = txt.indexOf("euro", txtStartIndex);
-// let monthSalary = txt.substring(txtStartIndex, txtEndIndex); //5000
+
