@@ -83,7 +83,7 @@ if (age < 18) {
 //     console.log(`${num1} is not a number`);
 // }
 
-// let input = prompt("Enter a character:");
+let input = prompt("Enter a character:");
 
 switch (true) {
   case !isNaN(input):
