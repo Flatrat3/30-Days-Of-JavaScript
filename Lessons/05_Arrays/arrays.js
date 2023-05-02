@@ -1,6 +1,8 @@
 //Array
 //Arrays
 //How to create an empty array
+const emptyArr = Array();
+const emptyArr1 = [];
 
 //Using Array constructor
 
@@ -13,7 +15,7 @@ let differentValue = [
 ];
 
 let companiesString = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
-let companiesArray = companiesString.split(", ");
+let companiesArray = companiesString.split(",");
 console.log(companiesArray[0]);
 
 const webTechs = [
